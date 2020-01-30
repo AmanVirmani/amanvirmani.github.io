@@ -15,6 +15,6 @@ email: aman.virmani26@gmail.com
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-157375665-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
