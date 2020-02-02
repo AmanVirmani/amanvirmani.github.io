@@ -203,7 +203,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </article>
 
-	
+        <article>
+            <h3 class="title"><a href="https://github.com/AmanVirmani/ENPM808X-Human-Obstacle-Detection" title="Human-Obstacle-Detection">Human-Obstacle-Detection</a></h3>
+            <div class="thumbnail">
+                    <iframe width="770" height="433" src="https://www.youtube.com/embed/t2idBJXhHqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--iframe width="1214" height="683" src="https://www.youtube.com/embed/t2idBJXhHqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+            <div class="content">
+                    <p style="text-align:justify">Object detection is necessary branch for robotics, especially autonomous robots. In order to navigate a robot in the real world, it is necessary to create a perception of the surrounding in robot’s reference frame. Human detection is a vital problem in the field of object detection. It is absolutely essential for a robot to detect and avoid human obstacles for the safety of people in the working environment of the robot. Plethora of work has been done to solve the problem of human detection. Color based approaches don’t perform well for varying lighting conditions. Although deep learning approaches provide state of the art results, but they require too much computational power. I have used HOG feature based approach for this module, because it provides good results and is computationally efficient.</p>
+                    <p style="text-align:justify">I have designed a module, for the ACME Robotics, to detect the positions of humans around the robot. The module works by taking an image and processing it to produce rectangular bounding regions around the detected humans in the environment. The pixel coordinates of the bounding boxes can then be to track the location of human with respect to the robot’s frame of reference. Such a system will help in human obstacle detection and avoidance when the robot is navigation in the real world.</p>
+                    <p style="text-align:justify">In order to implement this module, INRIA Person Dataset with set of images containing humans (positive images) and a set not containing humans (negative images) is used. First, Histogram of oriented gradient (HOG) features is calculated for each of the image. These HOG vectors are then used as input to train the Support Vector Machine classifier to detect the location of humans in each image. The output of the SVM is compared to the ground truth labels and the error is then fed back to train the classifier. This trained classifier can then be used for real time estimation of human’s position. Training feature will be provided with the module so that it can be improved over time with adding more training data.</p>
+<p>&nbsp;</p>
+            </div>
+        </article>
+
         <article>
             <h3 class="title"><a href="http://8085projects.in/2016/12/01/connect-4/" title="8085 based connect 4">8085 based connect 4</a></h3>
             <div class="thumbnail">
