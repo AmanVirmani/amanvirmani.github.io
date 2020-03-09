@@ -1,0 +1,46 @@
+
+<footer>
+    <div class="social-links-wrapper">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                <i style="color:black;font-size:3em" class="icon fa fa-linkedin-square"></i>
+            </a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank">
+                <i style="color:black;font-size:3em" class="icon fa fa-github"></i>
+            </a>
+            <a href="mailto:{{ site.email }}" target="_blank">
+                <i style="color:black;font-size:3em" class="icon fa fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script>
+    window.onscroll = function () {
+        resizeHeader()
+    }
+
+    function resizeHeader() {
+
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.querySelector(".main-header").classList.add("resized")
+        } else {
+            document.querySelector(".main-header").classList.remove("resized")
+        }
+    }
+</script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='{{ site.base }}assets/js/animations.js'></script>
+<script type='text/javascript' src='{{ site.base }}assets/js/device.js'></script>
+<script type='text/javascript' src='{{ site.base }}assets/js/ieFix.js'></script>
+{% include google-analytics.html %}

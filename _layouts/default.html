@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+{% if page.title == "Home" %}
+  <body class="home page page-id-186 page-template page-template-home page-template-home-php">
+{% else %}
+  <body class="page page-id-1253 page-template-default">
+{% endif %}
+
+    {% include header.html %}
+
+<!-- Add individual page content -->
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>
