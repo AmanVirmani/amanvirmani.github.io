@@ -1,14 +1,14 @@
 {
 	"projects": [{
             "id": 1,
-            "placeholderImg": "http://via.placeholder.com/300",
+            "placeholderImg": "../assets/images/output.gif",
 			"thumbnail": "",
 			"title": "Path Planning using Dijkstra Algorithm",
 			"iframeSrc": "../assets/images/output.gif",
 			"content": "<p>Dijkstra Algorithm is used to find the shortest path from a start to a goal point. This algorithm was first developed by Edsger W. Dijkstra, hence the name.</p><p>The map has been divided into discrete nodes and action space is of size 8 in top, top-left, left, bottom-left, bottom, bottom-right, right and top-right direction.Time Complexity of this algorithm is O(E*log V) where E and V are the number of edges and vertices in the graph.</p>"
 		},
 		{   "id": 2,
-            "placeholderImg": "http://via.placeholder.com/300",
+            "placeholderImg": "../assets/images/butler.png",
 			"thumbnail": "",
 			"title": "Butler",
 			"iframeSrc": "https://www.youtube.com/embed/iXygtbfl7JQ",
@@ -16,7 +16,7 @@
 		},
 		{
             "id": 3,
-            "placeholderImg": "http://via.placeholder.com/300",
+            "placeholderImg": "../assets/images/Human_detection.png",
 			"thumbnail": "",
 			"title": "Human-Obstacle-Detection",
 			"iframeSrc": "https://www.youtube.com/embed/t2idBJXhHqs",
@@ -24,7 +24,7 @@
 		},
 		{
             "id": 4,
-            "placeholderImg": "http://via.placeholder.com/300",
+            "placeholderImg": "../assets/images/connect4.JPG",
 			"thumbnail": "",
 			"title": "8085 based connect 4",
 			"iframeSrc": "https://www.youtube.com/embed/Vczo4XK2sJw",
