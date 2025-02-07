@@ -1,44 +1,104 @@
-# vCard - Personal portfolio
+# Portfolio Website Improvements
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+This document tracks the improvements and changes made to the portfolio website template.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Major Changes
 
-## Demo
+### 1. File Structure Reorganization
+- Implemented Jekyll-based component structure
+- Moved components into `_includes` directory
+- Separated sections into individual files:
+  - `_includes/head.html`
+  - `_includes/navbar.html`
+  - `_includes/sidebar.html`
+  - `_includes/sections/about.html`
+  - `_includes/sections/resume.html`
+  - `_includes/sections/portfolio.html`
+  - `_includes/sections/blog.html`
+  - `_includes/sections/contact.html`
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+### 2. Navigation System Improvements
+- Fixed navigation functionality between sections
+- Implemented proper active state management
+- Added console logging for debugging
+- Improved error handling
+- Added smooth scrolling to top on page change
+- Maintained consistent UI state with default active navigation
 
-## Prerequisites
+### 3. JavaScript Enhancements
+- Wrapped code in `DOMContentLoaded` event listener
+- Added null checks for all DOM elements
+- Modernized code with `forEach` loops
+- Improved event handling
+- Added detailed console logging
+- Fixed testimonials modal functionality
+- Enhanced form validation
 
-Before you begin, ensure you have met the following requirements:
+### 4. Component Structure
+Created modular components for:
+- Services section
+- Testimonials section
+- Skills section
+- Client section
+- Contact form
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## File-Specific Changes
 
-## Installing vCard
+### index.html
+- Implemented Jekyll front matter
+- Reorganized structure using includes
+- Improved script loading
+- Added proper component organization
 
-To install **vCard**, follow these steps:
+### assets/js/script.js
+- Added DOM ready event listener
+- Improved element selection
+- Enhanced error handling
+- Added debugging capabilities
+- Fixed navigation functionality
+- Improved modal handling
+- Enhanced form validation
 
-Linux and macOS:
+### assets/css/style.css
+- Improved page visibility handling
+- Enhanced navigation styles
+- Fixed article display properties
 
+### _includes/navbar.html
+- Added default active state for About button
+- Ensures UI consistency on page load
+
+## Current Features
+1. Responsive design
+2. Working navigation system
+3. Modal functionality
+4. Form validation
+5. Portfolio filtering
+6. Testimonials carousel
+7. Skills display
+8. Contact form
+9. Interactive sidebar
+
+## Known Issues
+None currently reported
+- ~~Navigation buttons lost highlight state on page reload~~ (Fixed)
+
+## Future Improvements
+Potential enhancements could include:
+1. Page transitions
+2. URL hash support
+3. Loading states
+4. Enhanced error handling
+5. Image optimization
+6. Performance improvements
+7. SEO enhancements
+
+## Development Setup
+1. Run this command to start the docker container:
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+docker run  -v "$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:pages bash
 ```
+2. Run `bundle install`
+3. Start development server with `bundle exec jekyll serve --host 0.0.0.0 --incremental`
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+## File Structure
